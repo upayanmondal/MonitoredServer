@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Project Dashboard - MonitoredServer </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+
+    <header class="dashboard-header">
+        <h2> Project Dashboard </h2>
+
+        <div class="dashboard-links">
+            <a href="tasks.html"> Task Management </a>
+            <a href="index.html"> Home </a>
+
+        </div>
+    </header>
+
+    <main class="dashboard-content">
+        <h1> Team Overview </h1>
+        <p class="dashboard-subtitle">
+            Monitor your group's project and task progress.
+        </p>
+        <p id="dashboard-message" role="status"> Loading Dashboard............ </p>
+
+        <section id="project-section" class="hidden">
+            <article class="dashboard-card">
+                <h2 id="project-name"></h2>
+                <p id="project-description"></p>
+                <p>
+                    Project Status:
+                    <span id="project-status"></span>
+                </p>
+
+                <p>
+                    Project Id:
+                    <span id="project-id"></span>
+                </p>
+            </article>
+
+            <section id="task-statistics" class="dashboard-cards">
+                <article class="dashboard-card">
+                    <h3> In Progress </h3>
+                    <p id="in-progress-tasks"> 0 </p>
+                </article>
+
+                <article class="dashboard-card">
+                    <h3> Completed </h3>
+                    <p id="completed-tasks"> 0 </p>
+                </article>
+
+                <article class="dashboard-card">
+                    <h3> Pending </h3>
+                    <p id="pending-tasks"> 0 </p>
+                </article>
+
+                <article class="dashboard-card">
+                    <h3> Total Tasks </h3>
+                    <p id="total-tasks"></p>
+                </article>
+            </section>
+
+            <article class="dashboard-card">
+                <h3> Project Progress </h3>
+                <progress id="project-progress" value="0" max="100"></progress>
+                <p id="progress-percentage"> 0% completed </p>
+            </article>
+
+            <section id="project-tasks">
+                <h2> Task Overview </h2>
+                <div id="task-list"></div>
+            </section>
+
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
