@@ -109,7 +109,7 @@ Install the following:
 ### 2. Clone the Repository
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
+git clone https://github.com/upayanmondal/MonitoredServer.git
 cd MonitoredServer
 ```
 
